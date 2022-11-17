@@ -1,0 +1,14 @@
+# Screenshot 
+Print
+	maim --select ~/Pictures/screenshots/$(date +%s).png
+XF86MonBrightnessDown
+	sudo brillo -U 5 -q
+XF86MonBrightnessUp
+	sudo brillo -A 5 -q
+XF86AudioRaiseVolume
+	amixer sset Master playback 10%+
+XF86AudioLowerVolume
+	amixer sset Master playback 10%-
+#XF86LAN
+#XF86AudioMute
+	
