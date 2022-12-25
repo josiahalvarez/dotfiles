@@ -1,2 +1,16 @@
+# Basic settings
+set hidden true
+set icons true
+set ignorecase true
+
+# binds
 map A rename
 map D delete
+
+# image previews
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
+# icons 
