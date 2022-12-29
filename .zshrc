@@ -21,6 +21,8 @@ _comp_options+=(globdots)	# include hidden files
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
-# prompt
+# Enable colors and change prompt 
+autoload -U colors && colors
 #setopt autocd
-PS1="%n@%M %~$%b "
+#PS1="%n@%M %~$%b "
+PS1="%B%n%{$fg[red]%}@%{$fg[gray]%}%M%{$fg[white]%}%~%{$reset_color%} $%b "
