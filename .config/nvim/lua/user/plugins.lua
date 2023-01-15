@@ -38,14 +38,19 @@ return packer.startup(function(use)
 
   -- cmp 
   use 'hrsh7th/nvim-cmp' 
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path' 
+  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
+  use 'hrsh7th/cmp-nvim-lsp'
 
   -- snippets
   use 'L3MON4D3/LuaSnip' -- snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+  -- LSP
+  use 'williamboman/mason.nvim' -- pkg mngr for LSP
+  use 'williamboman/mason-lspconfig.nvim' -- setup between nvim and LSP
+  use 'neovim/nvim-lspconfig' -- enable LSP
 
   -- Automatically set up your config after cloning packer.nvim
   -- Put this at the end after all plugins
