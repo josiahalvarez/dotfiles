@@ -25,4 +25,4 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 autoload -U colors && colors
 #setopt autocd
 #PS1="%n@%M %~$%b "
-PS1="%B%n%{$fg[red]%}@%{$fg[gray]%}%M%{$fg[white]%}%~%{$reset_color%} $%b "
+PS1="%B%n%{$fg[red]%}@%{$fg[gray]%}%M%{$fg[white]%} %~%{$reset_color%} $%b "
